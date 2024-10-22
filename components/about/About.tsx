@@ -8,7 +8,7 @@ const AboutSection = () => {
   return (
     <div className="container max-w-7xl mx-auto px-6">
       <div className="md:flex justify-between w-full items-center">
-        <div className="md:w-2/3 w-full">
+        <div className="md:w-1/2 w-full">
           <div className=" md:text-4xl uppercase text-xl font-bold mb-5">
             About <span className="text-primary">Me</span>
             <p className="w-16 h-[4px] bg-primary"></p>
@@ -31,9 +31,9 @@ const AboutSection = () => {
         <div>
           <Image
             alt="profile"
-            src="https://i.ibb.co.com/4RmkpQV/aboutus-removebg-preview.png"
+            src="https://i.ibb.co.com/4mf1wjj/about.png"
             height={900}
-            width={900}
+            width={500}
           />
         </div>
       </div>

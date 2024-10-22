@@ -11,8 +11,8 @@ const SkillsSection = () => {
         <p className="w-16 h-[4px] bg-primary"></p>
       </div>
       <div>
-        <div className="grid grid-cols-2 md:grid-cols-3 gap-5 mt-10 lg:grid-cols-4 mx-auto justify-center">
-          <div className="text-center mx-2 border-2 rounded-md border-gray-500 hover:scale-105 duration-300 transition-all w-60 py-3">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-5 mt-10 lg:grid-cols-4 mx-auto justify-center">
+          <div className="text-center mx-2 dark:bg-darkBg dark:border border-gray-400 bg-white shadow-md rounded-md hover:scale-105 duration-300 transition-all w-60 py-3">
             <div className="flex justify-center">
               <img
                 src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg"
@@ -25,7 +25,7 @@ const SkillsSection = () => {
             VsCode
           </div>
 
-          <div className="text-center mx-2 border-2 rounded-md border-gray-500 hover:scale-105 duration-300 transition-all w-60 py-3">
+          <div className="text-center mx-2 dark:bg-darkBg dark:border border-gray-400 bg-white shadow-md rounded-md hover:scale-105 duration-300 transition-all w-60 py-3">
             <div className="flex justify-center">
               <img
                 src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain-wordmark.svg"
@@ -38,7 +38,7 @@ const SkillsSection = () => {
             FireBase
           </div>
 
-          <div className="text-center mx-2 border-2 rounded-md border-gray-500 hover:scale-105 duration-300 transition-all w-60 py-3">
+          <div className="text-center mx-2 dark:bg-darkBg dark:border border-gray-400 bg-white shadow-md rounded-md hover:scale-105 duration-300 transition-all w-60 py-3">
             <div className="flex justify-center">
               <img
                 src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg"
@@ -51,7 +51,7 @@ const SkillsSection = () => {
             Bootstrap
           </div>
 
-          <div className="text-center mx-2 border-2 rounded-md border-gray-500 hover:scale-105 duration-300 transition-all w-60 py-3">
+          <div className="text-center mx-2 dark:bg-darkBg dark:border border-gray-400 bg-white shadow-md rounded-md hover:scale-105 duration-300 transition-all w-60 py-3">
             <div className="flex justify-center">
               <img
                 src="https://cdn.simpleicons.org/tailwindcss/06B6D4"
@@ -64,7 +64,7 @@ const SkillsSection = () => {
             Tailwind
           </div>
 
-          <div className="text-center mx-2 border-2 rounded-md border-gray-500 hover:scale-105 duration-300 transition-all w-60 py-3">
+          <div className="text-center mx-2 dark:bg-darkBg dark:border border-gray-400 bg-white shadow-md rounded-md hover:scale-105 duration-300 transition-all w-60 py-3">
             <div className="flex justify-center">
               <img
                 src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"
@@ -77,7 +77,7 @@ const SkillsSection = () => {
             CSS3
           </div>
 
-          <div className="text-center mx-2 border-2 rounded-md border-gray-500 hover:scale-105 duration-300 transition-all w-60 py-3">
+          <div className="text-center mx-2 dark:bg-darkBg dark:border border-gray-400 bg-white shadow-md rounded-md hover:scale-105 duration-300 transition-all w-60 py-3">
             <div className="flex justify-center">
               <img
                 src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg"
@@ -90,7 +90,7 @@ const SkillsSection = () => {
             Figma
           </div>
 
-          <div className="text-center mx-2 border-2 rounded-md border-gray-500 hover:scale-105 duration-300 transition-all w-60 py-3">
+          <div className="text-center mx-2 dark:bg-darkBg dark:border border-gray-400 bg-white shadow-md rounded-md hover:scale-105 duration-300 transition-all w-60 py-3">
             <div className="flex justify-center">
               <img
                 src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg"
@@ -103,7 +103,7 @@ const SkillsSection = () => {
             Git
           </div>
 
-          <div className="text-center mx-2 border-2 rounded-md border-gray-500 hover:scale-105 duration-300 transition-all w-60 py-3">
+          <div className="text-center mx-2 dark:bg-darkBg dark:border border-gray-400 bg-white shadow-md rounded-md hover:scale-105 duration-300 transition-all w-60 py-3">
             <div className="flex justify-center">
               <img
                 src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
@@ -116,7 +116,7 @@ const SkillsSection = () => {
             HTML5
           </div>
 
-          <div className="text-center mx-2 border-2 rounded-md border-gray-500 hover:scale-105 duration-300 transition-all w-60 py-3">
+          <div className="text-center mx-2 dark:bg-darkBg dark:border border-gray-400 bg-white shadow-md rounded-md hover:scale-105 duration-300 transition-all w-60 py-3">
             <div className="flex justify-center">
               <img
                 src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
@@ -129,7 +129,7 @@ const SkillsSection = () => {
             Javascript
           </div>
 
-          <div className="text-center mx-2 border-2 rounded-md border-gray-500 hover:scale-105 duration-300 transition-all w-60 py-3">
+          <div className="text-center mx-2 dark:bg-darkBg dark:border border-gray-400 bg-white shadow-md rounded-md hover:scale-105 duration-300 transition-all w-60 py-3">
             <div className="flex justify-center">
               <img
                 src="https://www.vectorlogo.zone/logos/typescriptlang/typescriptlang-icon.svg"
@@ -142,7 +142,7 @@ const SkillsSection = () => {
             Typescript
           </div>
 
-          <div className="text-center mx-2 border-2 rounded-md border-gray-500 hover:scale-105 duration-300 transition-all w-60 py-3">
+          <div className="text-center mx-2 dark:bg-darkBg dark:border border-gray-400 bg-white shadow-md rounded-md hover:scale-105 duration-300 transition-all w-60 py-3">
             <div className="flex justify-center">
               <img
                 src="https://www.vectorlogo.zone/logos/nextjs/nextjs-icon.svg"
@@ -155,7 +155,7 @@ const SkillsSection = () => {
             Next.js
           </div>
 
-          <div className="text-center mx-2 border-2 rounded-md border-gray-500 hover:scale-105 duration-300 transition-all w-60 py-3">
+          <div className="text-center mx-2 dark:bg-darkBg dark:border border-gray-400 bg-white shadow-md rounded-md hover:scale-105 duration-300 transition-all w-60 py-3">
             <div className="flex justify-center">
               <img
                 src="https://www.vectorlogo.zone/logos/js_redux/js_redux-icon.svg"
@@ -168,7 +168,7 @@ const SkillsSection = () => {
             Redux
           </div>
 
-          <div className="text-center mx-2 border-2 rounded-md border-gray-500 hover:scale-105 duration-300 transition-all w-60 py-3">
+          <div className="text-center mx-2 dark:bg-darkBg dark:border border-gray-400 bg-white shadow-md rounded-md hover:scale-105 duration-300 transition-all w-60 py-3">
             <div className="flex justify-center">
               <img
                 src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
@@ -181,7 +181,7 @@ const SkillsSection = () => {
             React
           </div>
 
-          <div className="text-center mx-2 border-2 rounded-md border-gray-500 hover:scale-105 duration-300 transition-all w-60 py-3">
+          <div className="text-center mx-2 dark:bg-darkBg dark:border border-gray-400 bg-white shadow-md rounded-md hover:scale-105 duration-300 transition-all w-60 py-3">
             <div className="flex justify-center">
               <img
                 src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg"
@@ -194,7 +194,7 @@ const SkillsSection = () => {
             Mongodb
           </div>
 
-          <div className="text-center mx-2 border-2 rounded-md border-gray-500 hover:scale-105 duration-300 transition-all w-60 py-3">
+          <div className="text-center mx-2 dark:bg-darkBg dark:border border-gray-400 bg-white shadow-md rounded-md hover:scale-105 duration-300 transition-all w-60 py-3">
             <div className="flex justify-center">
               <img
                 src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg"
@@ -206,7 +206,7 @@ const SkillsSection = () => {
             <br />
             Node.js
           </div>
-          <div className="text-center mx-2 border-2 rounded-md border-gray-500 hover:scale-105 duration-300 transition-all w-60 py-3">
+          <div className="text-center mx-2 dark:bg-darkBg dark:border border-gray-400 bg-white shadow-md rounded-md hover:scale-105 duration-300 transition-all w-60 py-3">
             <div className="flex justify-center">
               <img
                 src="https://i.ibb.co.com/5cPxKJ6/Mongoose-js.png"

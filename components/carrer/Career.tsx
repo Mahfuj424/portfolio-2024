@@ -18,23 +18,23 @@ const CareerSection = () => {
         Career <span className="text-primary">Progression</span>
         <p className="w-16 h-[4px] bg-primary"></p>
       </div>
-      <div className="flex justify-around gap-5 dark:bg-darkModal bg-gray-200 md:w-1/3 w-full rounded-md mx-auto">
+      <div className="flex justify-around gap-5 dark:bg-darkModal bg-white shadow-md md:w-1/3 w-full rounded-md mx-auto">
         <h1
           onClick={() => setActiveTab("education")}
-          className={` ${activeTab === "education" ? "text-white bg-primary duration-400 transition-all" : "dark:text-white text-black"} py-1 px-3 rounded-lg cursor-pointer  my-2`}
+          className={` ${activeTab === "education" ? "text-white bg-primary duration-400 transition-all" : "dark:text-white text-black"} py-1 px-3 rounded-lg cursor-pointer  my-4`}
         >
           Education
         </h1>
         <h1
           onClick={() => setActiveTab("experience")}
-          className={` ${activeTab === "experience" ? "text-white bg-primary duration-400 transition-all" : "dark:text-white text-black"} py-1 px-3 rounded-lg cursor-pointer  my-2`}
+          className={` ${activeTab === "experience" ? "text-white bg-primary duration-400 transition-all" : "dark:text-white text-black"} py-1 px-3 rounded-lg cursor-pointer  my-4`}
         >
           Experience
         </h1>
       </div>
       <div>
         {activeTab === "education" ? (
-          <div className="dark:bg-darkCard bg-gray-100 p-5 gap-5 md:flex justify-between rounded-md mt-5">
+          <div className="dark:bg-darkCard bg-white shadow-sm p-5 gap-5 md:flex justify-between rounded-md mt-5">
             <div className="md:w-1/2 w-full">
               <h1 className="text-primary text-2xl font-semibold">
                 Diploma In Engineering
@@ -71,7 +71,7 @@ const CareerSection = () => {
             </div>
           </div>
         ) : (
-          <div className="dark:bg-darkCard bg-gray-100 p-5 gap-5 md:flex justify-between rounded-md mt-5">
+          <div className="dark:bg-darkCard bg-white shadow-sm p-5 gap-5 md:flex justify-between rounded-md mt-5">
             <div className="md:w-1/2 w-full">
               <Link
                 target="_blank"
