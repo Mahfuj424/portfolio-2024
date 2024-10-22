@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { FaCalendar, FaFolder, FaEye, FaHeart } from "react-icons/fa";
+import { FaCalendar, FaEye, FaHeart } from "react-icons/fa";
 import Image from "next/image";
 import Link from "next/link";
 import { VscArrowSmallRight } from "react-icons/vsc";
@@ -29,19 +29,19 @@ export default function BlogCard({
 }: BlogCardProps) {
   return (
     <motion.div
+      animate={{ opacity: 1, y: 0 }}
       className="bg-white rounded-lg shadow-md overflow-hidden"
       initial={{ opacity: 0, y: 50 }}
-      animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5 }}
     >
       <Link href={`/blog/${slug}`}>
         <div className="relative h-48 w-full">
           <Image
-            src={imageUrl}
             alt={title}
+            className="transition-transform duration-300 hover:scale-105"
             layout="fill"
             objectFit="cover"
-            className="transition-transform duration-300 hover:scale-105"
+            src={imageUrl}
           />
           <div className="absolute top-0 right-0 bg-primary text-white px-2 py-1 m-2 rounded-md text-sm">
             {category}

@@ -1,3 +1,4 @@
+/* eslint-disable import/order */
 /* eslint-disable react/self-closing-comp */
 /* eslint-disable prettier/prettier */
 /* eslint-disable react/no-unescaped-entities */
@@ -43,8 +44,8 @@ const BannerPage: FC = () => {
           <div className="animate-pulse">
             <Image
               alt="profile"
-              src="https://i.ibb.co.com/xJk3Y5p/coder.webp"
               height={700}
+              src="https://i.ibb.co.com/xJk3Y5p/coder.webp"
               width={700}
             />
           </div>
@@ -55,10 +56,10 @@ const BannerPage: FC = () => {
       <div className="hidden md:block">
         <div className="md:absolute left-0 bottom-0 flex flex-col items-center gap-6 pb-10 lg:flex">
           <div className="flex flex-col gap-4">
-            <SocialIcon href="https://github.com" Icon={FaGithub} />
-            <SocialIcon href="https://linkedin.com" Icon={FaLinkedin} />
-            <SocialIcon href="https://twitter.com" Icon={FaTwitter} />
-            <SocialIcon href="https://telegram.org" Icon={FaTelegram} />
+            <SocialIcon Icon={FaGithub} href="https://github.com" />
+            <SocialIcon Icon={FaLinkedin} href="https://linkedin.com" />
+            <SocialIcon Icon={FaTwitter} href="https://twitter.com" />
+            <SocialIcon Icon={FaTelegram} href="https://telegram.org" />
           </div>
           <div className="w-[2px] h-24 dark:bg-white bg-gray-400"></div>
         </div>
@@ -76,7 +77,7 @@ interface SocialIconProps {
 }
 
 const SocialIcon: FC<SocialIconProps> = ({ href, Icon }) => (
-  <a href={href} target="_blank" rel="noopener noreferrer">
+  <a href={href} rel="noopener noreferrer" target="_blank">
     <Icon className="dark:text-white text-black hover:text-gray-300 text-2xl" />
   </a>
 );

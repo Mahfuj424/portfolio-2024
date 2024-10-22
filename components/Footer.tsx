@@ -1,3 +1,6 @@
+/* eslint-disable react/self-closing-comp */
+/* eslint-disable prettier/prettier */
+/* eslint-disable react/no-unescaped-entities */
 import Link from "next/link";
 import { FaGithub, FaLinkedin, FaTwitter } from "react-icons/fa";
 
@@ -10,7 +13,7 @@ export default function Footer() {
         <div className=" text-center">
           <div className="mb-4 md:mb-0">
             <p className="text-sm">
-              &copy; {currentYear} Your Name. All rights reserved.
+              &copy; {currentYear} Mahfuj Alam All rights reserved.
             </p>
           </div>
           <nav className="flex space-x-4 justify-center my-3">

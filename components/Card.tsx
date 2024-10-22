@@ -30,11 +30,11 @@ export default function ProjectCard({
       onMouseLeave={() => setIsHovered(false)}
     >
       <Image
-        src={imageUrl}
         alt={`Screenshot of ${title}`}
+        className="transition-transform duration-300 ease-in-out group-hover:scale-110"
         layout="fill"
         objectFit="cover"
-        className="transition-transform duration-300 ease-in-out group-hover:scale-110"
+        src={imageUrl}
       />
       <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-black/0 transition-opacity duration-300 ease-in-out opacity-60 group-hover:opacity-80" />
       <div className="absolute inset-0 p-6 flex flex-col justify-between">
@@ -57,19 +57,19 @@ export default function ProjectCard({
           <p className="text-white/90 mb-4">{description}</p>
           <div className="flex justify-between">
             <a
-              href={projectUrl}
-              target="_blank"
-              rel="noopener noreferrer"
               className="inline-flex items-center px-4 py-2 bg-white text-gray-800 text-sm font-medium rounded-md transition-colors duration-300 ease-in-out hover:bg-gray-100"
+              href={projectUrl}
+              rel="noopener noreferrer"
+              target="_blank"
             >
               <FaExternalLinkAlt className="mr-2" />
               View Project
             </a>
             <a
-              href={sourceUrl}
-              target="_blank"
-              rel="noopener noreferrer"
               className="inline-flex items-center px-4 py-2 bg-gray-800 text-white text-sm font-medium rounded-md transition-colors duration-300 ease-in-out hover:bg-gray-700"
+              href={sourceUrl}
+              rel="noopener noreferrer"
+              target="_blank"
             >
               <FaGithub className="mr-2" />
               Source Code

@@ -1,6 +1,6 @@
-import "@/styles/globals.css";
+/* eslint-disable prettier/prettier */
+import "../../styles/globals.css";
 import { Metadata, Viewport } from "next";
-import { Link } from "@nextui-org/link";
 import clsx from "clsx";
 
 import { Providers } from "./providers";
@@ -45,7 +45,7 @@ export default function RootLayout({
         <Providers themeProps={{ attribute: "class", defaultTheme: "dark" }}>
           <div className="relative flex flex-col dark:bg-darkBg bg-white">
             <Navbar />
-            <main className=" dark:bg-darkBg bg-gray-100  pt-16 md:px-6 flex-grow">
+            <main className="dark:bg-darkBg bg-gray-100  pt-16 md:px-6 flex-grow">
               {children}
             </main>
             <div>

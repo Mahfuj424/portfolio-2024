@@ -15,10 +15,10 @@ const SkillsSection = () => {
           <div className="text-center mx-2 dark:bg-darkBg dark:border border-gray-400 bg-white shadow-md rounded-md hover:scale-105 duration-300 transition-all w-60 py-3">
             <div className="flex justify-center">
               <img
+                alt="vscode"
+                height="48"
                 src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg"
                 width="48"
-                height="48"
-                alt="vscode"
               />
             </div>
             <br />
@@ -28,10 +28,10 @@ const SkillsSection = () => {
           <div className="text-center mx-2 dark:bg-darkBg dark:border border-gray-400 bg-white shadow-md rounded-md hover:scale-105 duration-300 transition-all w-60 py-3">
             <div className="flex justify-center">
               <img
+                alt="firebase"
+                height="48"
                 src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain-wordmark.svg"
                 width="48"
-                height="48"
-                alt="firebase"
               />
             </div>
             <br />
@@ -41,10 +41,10 @@ const SkillsSection = () => {
           <div className="text-center mx-2 dark:bg-darkBg dark:border border-gray-400 bg-white shadow-md rounded-md hover:scale-105 duration-300 transition-all w-60 py-3">
             <div className="flex justify-center">
               <img
+                alt="Bootstrap"
+                height="48"
                 src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg"
                 width="48"
-                height="48"
-                alt="Bootstrap"
               />
             </div>
             <br />
@@ -54,10 +54,10 @@ const SkillsSection = () => {
           <div className="text-center mx-2 dark:bg-darkBg dark:border border-gray-400 bg-white shadow-md rounded-md hover:scale-105 duration-300 transition-all w-60 py-3">
             <div className="flex justify-center">
               <img
-                src="https://cdn.simpleicons.org/tailwindcss/06B6D4"
-                width="48"
-                height="48"
                 alt="tailwind"
+                height="48"
+                src="https://i.ibb.co.com/CzRT9SR/Tailwind-CSS-Logo-svg.png"
+                width="48"
               />
             </div>
             <br />
@@ -67,10 +67,10 @@ const SkillsSection = () => {
           <div className="text-center mx-2 dark:bg-darkBg dark:border border-gray-400 bg-white shadow-md rounded-md hover:scale-105 duration-300 transition-all w-60 py-3">
             <div className="flex justify-center">
               <img
+                alt="css3"
+                height="48"
                 src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"
                 width="48"
-                height="48"
-                alt="css3"
               />
             </div>
             <br />
@@ -80,10 +80,10 @@ const SkillsSection = () => {
           <div className="text-center mx-2 dark:bg-darkBg dark:border border-gray-400 bg-white shadow-md rounded-md hover:scale-105 duration-300 transition-all w-60 py-3">
             <div className="flex justify-center">
               <img
+                alt="figma"
+                height="48"
                 src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg"
                 width="48"
-                height="48"
-                alt="figma"
               />
             </div>
             <br />
@@ -93,10 +93,10 @@ const SkillsSection = () => {
           <div className="text-center mx-2 dark:bg-darkBg dark:border border-gray-400 bg-white shadow-md rounded-md hover:scale-105 duration-300 transition-all w-60 py-3">
             <div className="flex justify-center">
               <img
+                alt="Git"
+                height="48"
                 src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg"
                 width="48"
-                height="48"
-                alt="Git"
               />
             </div>
             <br />
@@ -106,10 +106,10 @@ const SkillsSection = () => {
           <div className="text-center mx-2 dark:bg-darkBg dark:border border-gray-400 bg-white shadow-md rounded-md hover:scale-105 duration-300 transition-all w-60 py-3">
             <div className="flex justify-center">
               <img
+                alt="html5"
+                height="48"
                 src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
                 width="48"
-                height="48"
-                alt="html5"
               />
             </div>
             <br />
@@ -119,10 +119,10 @@ const SkillsSection = () => {
           <div className="text-center mx-2 dark:bg-darkBg dark:border border-gray-400 bg-white shadow-md rounded-md hover:scale-105 duration-300 transition-all w-60 py-3">
             <div className="flex justify-center">
               <img
+                alt="javascript"
+                height="48"
                 src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
                 width="48"
-                height="48"
-                alt="javascript"
               />
             </div>
             <br />
@@ -132,10 +132,10 @@ const SkillsSection = () => {
           <div className="text-center mx-2 dark:bg-darkBg dark:border border-gray-400 bg-white shadow-md rounded-md hover:scale-105 duration-300 transition-all w-60 py-3">
             <div className="flex justify-center">
               <img
+                alt="Typescript"
+                height="48"
                 src="https://www.vectorlogo.zone/logos/typescriptlang/typescriptlang-icon.svg"
                 width="48"
-                height="48"
-                alt="Typescript"
               />
             </div>
             <br />
@@ -145,10 +145,10 @@ const SkillsSection = () => {
           <div className="text-center mx-2 dark:bg-darkBg dark:border border-gray-400 bg-white shadow-md rounded-md hover:scale-105 duration-300 transition-all w-60 py-3">
             <div className="flex justify-center">
               <img
+                alt="next.js"
+                height="48"
                 src="https://www.vectorlogo.zone/logos/nextjs/nextjs-icon.svg"
                 width="48"
-                height="48"
-                alt="next.js"
               />
             </div>
             <br />
@@ -158,10 +158,10 @@ const SkillsSection = () => {
           <div className="text-center mx-2 dark:bg-darkBg dark:border border-gray-400 bg-white shadow-md rounded-md hover:scale-105 duration-300 transition-all w-60 py-3">
             <div className="flex justify-center">
               <img
+                alt="redux"
+                height="48"
                 src="https://www.vectorlogo.zone/logos/js_redux/js_redux-icon.svg"
                 width="48"
-                height="48"
-                alt="redux"
               />
             </div>
             <br />
@@ -171,10 +171,10 @@ const SkillsSection = () => {
           <div className="text-center mx-2 dark:bg-darkBg dark:border border-gray-400 bg-white shadow-md rounded-md hover:scale-105 duration-300 transition-all w-60 py-3">
             <div className="flex justify-center">
               <img
+                alt="react"
+                height="48"
                 src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
                 width="48"
-                height="48"
-                alt="react"
               />
             </div>
             <br />
@@ -184,10 +184,10 @@ const SkillsSection = () => {
           <div className="text-center mx-2 dark:bg-darkBg dark:border border-gray-400 bg-white shadow-md rounded-md hover:scale-105 duration-300 transition-all w-60 py-3">
             <div className="flex justify-center">
               <img
+                alt="mongodb"
+                height="48"
                 src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg"
                 width="48"
-                height="48"
-                alt="mongodb"
               />
             </div>
             <br />
@@ -197,10 +197,10 @@ const SkillsSection = () => {
           <div className="text-center mx-2 dark:bg-darkBg dark:border border-gray-400 bg-white shadow-md rounded-md hover:scale-105 duration-300 transition-all w-60 py-3">
             <div className="flex justify-center">
               <img
+                alt="node.js"
+                height="48"
                 src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg"
                 width="48"
-                height="48"
-                alt="node.js"
               />
             </div>
             <br />
@@ -209,10 +209,10 @@ const SkillsSection = () => {
           <div className="text-center mx-2 dark:bg-darkBg dark:border border-gray-400 bg-white shadow-md rounded-md hover:scale-105 duration-300 transition-all w-60 py-3">
             <div className="flex justify-center">
               <img
+                alt="mongoose"
+                height="48"
                 src="https://i.ibb.co.com/5cPxKJ6/Mongoose-js.png"
                 width="48"
-                height="48"
-                alt="mongoose"
               />
             </div>
             <br />

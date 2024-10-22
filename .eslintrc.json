@@ -40,7 +40,13 @@
     "react-hooks/exhaustive-deps": "off",
     "jsx-a11y/click-events-have-key-events": "warn",
     "jsx-a11y/interactive-supports-focus": "warn",
-    "prettier/prettier": "warn",
+    "prettier/prettier": [
+      "off",
+      {
+        "singleQuote": false, // Set Prettier to prefer single quotes
+        "endOfLine": "auto" // Avoid end-of-line issues
+      }
+    ],
     "no-unused-vars": "off",
     "unused-imports/no-unused-vars": "off",
     "unused-imports/no-unused-imports": "warn",
@@ -87,10 +93,6 @@
     ],
     "padding-line-between-statements": [
       "warn",
-      {
-        "singleQuote": true,
-        "parser": "flow"
-      },
       { "blankLine": "always", "prev": "*", "next": "return" },
       { "blankLine": "always", "prev": ["const", "let", "var"], "next": "*" },
       {

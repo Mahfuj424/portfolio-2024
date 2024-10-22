@@ -6,20 +6,20 @@ const BlogsSection = () => {
     <div className="container max-w-7xl w-full mx-auto px-6 my-20">
       <div className=" md:text-4xl uppercase text-xl font-bold mb-5">
         Features <span className="text-primary">Blogs</span>
-        <p className="w-16 h-[4px] bg-primary"></p>
+        <p className="w-16 h-[4px] bg-primary" />
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
         {[1, 2, 3, 4, 5, 6].map((blog, index) => (
           <BlogCard
             key={index}
-            title={"First Blog"}
-            description="This is the description for the first blog."
             category="Technology"
             createdAt="2024-10-22"
+            description="This is the description for the first blog."
             imageUrl="https://i.ibb.co.com/3MFZrdc/ts-logo-Bst-CNr-TU-1-Dbxpr.webp"
-            slug="first-blog"
-            viewCount={100}
             likeCount={20}
+            slug="first-blog"
+            title={"First Blog"}
+            viewCount={100}
           />
         ))}
       </div>

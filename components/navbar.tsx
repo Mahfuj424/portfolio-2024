@@ -44,12 +44,18 @@ export const Navbar = () => {
               <NextLink
                 className={clsx(
                   linkStyles({ color: "foreground" }),
-                  "data-[active=true]:text-primary text-xl data-[active=true]:font-medium"
+                  "relative group text-xl"
                 )}
                 color="foreground"
                 href={item.href}
               >
                 {item.label}
+                {/* Single span for left-to-right hover border animation */}
+                <span
+                  className="absolute left-0 bottom-[-2px] h-[2px] bg-primary 
+                  transform scale-x-0 transition-transform duration-300 ease-in-out group-hover:scale-x-100"
+                  style={{ width: "100%" }}
+                ></span>
               </NextLink>
             </NavbarItem>
           ))}

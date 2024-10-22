@@ -31,8 +31,8 @@ const AboutSection = () => {
         <div>
           <Image
             alt="profile"
-            src="https://i.ibb.co.com/4mf1wjj/about.png"
             height={900}
+            src="https://i.ibb.co.com/4mf1wjj/about.png"
             width={500}
           />
         </div>
