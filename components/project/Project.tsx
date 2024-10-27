@@ -2,24 +2,32 @@
 /* eslint-disable jsx-a11y/click-events-have-key-events */
 "use client";
 import React, { useState } from "react";
-
 import ProjectCard from "../Card";
+import { useGetAllProjectQuery } from "@/redux/api/project";
 
 // Define an array of project categories
 const tabArray: string[] = [
-  "All",
-  "Booking",
-  "E-Learning",
-  "E-Commerce",
-  "Javascript",
-  "Landing Page",
-  "Portfolio",
-  "Service",
+  "all",
+  "booking",
+  "e-Learning",
+  "e-Commerce",
+  "javascript",
+  "landing Page",
+  "portfolio",
+  "service",
 ];
 
 const Project: React.FC = () => {
-  // Ensure activeTab is typed as a string
-  const [activeTab, setActiveTab] = useState<string>("All");
+  // Set initial value to 'all' for a default category
+  const [activeTab, setActiveTab] = useState<string>("all");
+
+  // Pass the activeTab directly to the query
+  const { data } = useGetAllProjectQuery(activeTab !== "all" ? activeTab : "");
+  const projectData = data?.data;
+
+  // Log activeTab and projectData for debugging
+  console.log("Active Tab:", activeTab);
+  console.log("Project Data:", projectData);
 
   return (
     <div className="w-full mx-auto mt-20 px-6 max-w-7xl">
@@ -48,16 +56,8 @@ const Project: React.FC = () => {
 
       {/* Project cards */}
       <div className="mt-5 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
-        {[1, 2, 3, 4, 5, 6].map((_item, index) => (
-          <ProjectCard
-            key={index}
-            description="A brief description of the project and its key features."
-            imageUrl="https://i.ibb.co/GPy88Bg/mpi-College.jpg"
-            projectUrl="#"
-            sourceUrl="#"
-            technologies={[]} // Provide the technologies array if available
-            title="Gardening platform"
-          />
+        {projectData?.map((item: any, index: number) => (
+          <ProjectCard key={index} item={item} />
         ))}
       </div>
     </div>

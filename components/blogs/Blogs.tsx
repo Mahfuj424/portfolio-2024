@@ -1,7 +1,13 @@
+/* eslint-disable react/jsx-sort-props */
+"use client";
 import React from "react";
 import BlogCard from "../BlogCard";
+import { useGetAllBlogQuery } from "@/redux/api/blog";
 
 const BlogsSection = () => {
+  const { data } = useGetAllBlogQuery({});
+  const blogData = data?.data;
+
   return (
     <div className="container max-w-7xl w-full mx-auto px-6 my-20">
       <div className=" md:text-4xl uppercase text-xl font-bold mb-5">
@@ -9,17 +15,18 @@ const BlogsSection = () => {
         <p className="w-16 h-[4px] bg-primary" />
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
-        {[1, 2, 3, 4, 5, 6].map((blog, index) => (
+        {blogData?.map((blog: any) => (
           <BlogCard
-            key={index}
-            category="Technology"
-            createdAt="2024-10-22"
-            description="This is the description for the first blog."
-            imageUrl="https://i.ibb.co.com/3MFZrdc/ts-logo-Bst-CNr-TU-1-Dbxpr.webp"
-            likeCount={20}
-            slug="first-blog"
-            title={"First Blog"}
-            viewCount={100}
+            key={blog?._id}
+            category={blog?.category}
+            createdAt={blog?.createdAt}
+            description={blog?.description}
+            imageUrl={blog?.image}
+            likeCount={blog?.likes?.length}
+            slug={blog?._id}
+            title={blog?.title}
+            comments={blog?.comments?.length}
+            viewCount={blog?.views?.length}
           />
         ))}
       </div>
