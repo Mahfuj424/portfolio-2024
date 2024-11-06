@@ -48,11 +48,11 @@ export default function BlogPost() {
       </h1>
       <div className="mb-6">
         <Image
-          src={post.image}
           alt={post.title}
-          width={800}
-          height={400}
           className="rounded-lg shadow-lg"
+          height={200}
+          src={post.image}
+          width={800}
         />
       </div>
       <div className="flex items-center justify-between mb-6 text-sm text-gray-500 dark:text-gray-400">

@@ -10,7 +10,7 @@ const SkillsSection = () => {
   const { data } = useGetAllTechSkillsQuery({});
   const skillsData = data?.data;
   return (
-    <div className="container max-w-7xl w-full mx-auto mt-20 px-6">
+    <div id="skills" className="container max-w-7xl w-full mx-auto mt-20 px-6">
       <div className=" md:text-4xl uppercase text-xl font-bold mb-5">
         Professional <span className="text-primary">Skillset</span>
         <p className="w-16 h-[4px] bg-primary"></p>

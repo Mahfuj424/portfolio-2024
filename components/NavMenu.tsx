@@ -10,6 +10,7 @@ import NextLink from "next/link";
 import { link as linkStyles } from "@nextui-org/theme";
 import clsx from "clsx";
 import { signOut } from "next-auth/react";
+import { Link as ScrollLink } from "react-scroll"; // Import from react-scroll
 
 const NavMenu = ({ item, user }: any) => {
   const [isModalOpen, setIsModalOpen] = useState(false); // Modal state
@@ -29,30 +30,49 @@ const NavMenu = ({ item, user }: any) => {
     } else if (user) {
       console.log("Logging out");
       signOut(); // Call signOut if the user is logged in
-    } else {
+    } else if (!item.href.startsWith("#")) {
       console.log(`Navigating to ${item.href}`);
-      window.location.href = item.href; // Default behavior: navigate to the href
+      window.location.href = item.href; // Navigate to external link
     }
   };
 
   return (
     <>
-      <NextLink
-        className={clsx(
-          linkStyles({ color: "foreground" }),
-          "relative group text-xl"
-        )}
-        color="foreground"
-        href={item.href}
-        onClick={handleClick} // All logic handled by this single handler
-      >
-        {user ? (item.label === "Login" ? "Logout" : item.label) : item.label}
-        <span
-          className="absolute left-0 bottom-[-2px] h-[2px] bg-primary 
-                    transform scale-x-0 transition-transform duration-300 ease-in-out group-hover:scale-x-100"
-          style={{ width: "100%" }}
-        ></span>
-      </NextLink>
+      {item.href.startsWith("#") ? (
+        <ScrollLink
+          to={item.href.replace("#", "")}
+          smooth={true}
+          duration={500}
+          className={clsx(
+            linkStyles({ color: "foreground" }),
+            "relative group text-xl cursor-pointer"
+          )}
+        >
+          {user ? (item.label === "Login" ? "Logout" : item.label) : item.label}
+          <span
+            className="absolute left-0 bottom-[-2px] h-[2px] bg-primary 
+                      transform scale-x-0 transition-transform duration-300 ease-in-out group-hover:scale-x-100"
+            style={{ width: "100%" }}
+          ></span>
+        </ScrollLink>
+      ) : (
+        <NextLink
+          className={clsx(
+            linkStyles({ color: "foreground" }),
+            "relative group text-xl"
+          )}
+          color="foreground"
+          href={item.href}
+          onClick={handleClick}
+        >
+          {user ? (item.label === "Login" ? "Logout" : item.label) : item.label}
+          <span
+            className="absolute left-0 bottom-[-2px] h-[2px] bg-primary 
+                      transform scale-x-0 transition-transform duration-300 ease-in-out group-hover:scale-x-100"
+            style={{ width: "100%" }}
+          ></span>
+        </NextLink>
+      )}
 
       {!user && item.label === "Login" && (
         <AuthModal isModalOpen={isModalOpen} closeModal={closeModal} />

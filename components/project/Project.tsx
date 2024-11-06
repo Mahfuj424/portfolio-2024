@@ -30,7 +30,7 @@ const Project: React.FC = () => {
   console.log("Project Data:", projectData);
 
   return (
-    <div className="w-full mx-auto mt-20 px-6 max-w-7xl">
+    <div id="projects" className="w-full mx-auto mt-20 px-6 max-w-7xl">
       <div className="md:text-4xl uppercase text-xl font-bold mb-5">
         Project <span className="text-primary">Skillset</span>
         <p className="w-16 h-[4px] bg-primary" />

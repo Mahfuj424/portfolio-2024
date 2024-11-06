@@ -6,7 +6,7 @@ import React from "react";
 
 const AboutSection = () => {
   return (
-    <div className="container max-w-7xl mx-auto px-6">
+    <div id="about" className="container max-w-7xl mx-auto px-6">
       <div className="md:flex justify-between w-full items-center">
         <div className="md:w-1/2 w-full">
           <div className=" md:text-4xl uppercase text-xl font-bold mb-5">

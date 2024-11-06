@@ -9,7 +9,7 @@ const BlogsSection = () => {
   const blogData = data?.data;
 
   return (
-    <div className="container max-w-7xl w-full mx-auto px-6 my-20">
+    <div id="blog" className="container max-w-7xl w-full mx-auto px-6 my-20">
       <div className=" md:text-4xl uppercase text-xl font-bold mb-5">
         Features <span className="text-primary">Blogs</span>
         <p className="w-16 h-[4px] bg-primary" />

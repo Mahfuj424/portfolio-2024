@@ -10,7 +10,10 @@ import TypewriterComponent from "../Typewriter";
 
 const BannerPage: FC = () => {
   return (
-    <div className="max-w-full h-full md:h-[calc(100vh-130px)] mx-auto md:relative">
+    <div
+      id="home"
+      className="max-w-full h-full md:h-[calc(100vh-130px)] mx-auto md:relative"
+    >
       {/* Center Section */}
       <div className="max-w-7xl mx-auto flex flex-col space-y-3 items-start px-6">
         <div className="md:flex items-center justify-between w-full">
@@ -33,9 +36,13 @@ const BannerPage: FC = () => {
               </p>
             </div>
             <div className="flex justify-start gap-6 mt-6">
-              <button className="bg-primary duration-300 transition-all px-6 flex items-center gap-1 py-2 rounded-full text-white hover:bg-gray-700">
+              <a
+                className="bg-primary duration-300 transition-all px-6 flex items-center gap-1 py-2 rounded-full text-white hover:bg-gray-700"
+                download="Mahfuj_Resume.pdf"
+                href="/public/resume.pdf" // Path to the PDF in the public folder
+              >
                 <MdOutlineDownload /> Resume
-              </button>
+              </a>
               <button className="text-primary text-5xl">
                 <MdSlowMotionVideo />
               </button>
@@ -56,9 +63,12 @@ const BannerPage: FC = () => {
       <div className="hidden md:block">
         <div className="md:absolute left-0 bottom-0 flex flex-col items-center gap-6 pb-10 lg:flex">
           <div className="flex flex-col gap-4">
-            <SocialIcon Icon={FaGithub} href="https://github.com" />
-            <SocialIcon Icon={FaLinkedin} href="https://linkedin.com" />
-            <SocialIcon Icon={FaTwitter} href="https://twitter.com" />
+            <SocialIcon Icon={FaGithub} href="https://github.com/Mahfuj424" />
+            <SocialIcon
+              Icon={FaLinkedin}
+              href="https://www.linkedin.com/in/mahfujalam1/"
+            />
+            <SocialIcon Icon={FaTwitter} href="https://x.com/AhmedMahfu_11" />
             <SocialIcon Icon={FaTelegram} href="https://telegram.org" />
           </div>
           <div className="w-[2px] h-24 dark:bg-white bg-gray-400"></div>
